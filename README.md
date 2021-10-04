@@ -74,10 +74,12 @@ Various iterations of testing was done and the results are as follows:
 ![Test Results 1](Resources/test_results_various_runs_1.png)
 ![Test Results 2](Resources/test_results_various_runs_2.png)
 
+Some of the models with the best SVM accuracy started the training period 18 or 6 or 12 months from the initial training data.
+
 If we review the classification report for start after 18 months for 31 month with a short window of 37 and long window of 290, we observe 
-![SVM short 37 long 290 start 18 period 31](Resources/SVM_short_37_long_290_start_18_period_31.png)
-![Adaboost short 37 long 290 start 18 period 31](Resources/Adaboost_short_37_long_290_start_18_period_31.png)
+![SVM short 37 long 290 start 18 period 31](Resources/SVM_short_37_long_290_start_18_period_31_classification_report.png)
+![Adaboost short 37 long 290 start 18 period 31](Resources/Adaboost_short_37_long_290_start_18_period_31_classification_report.png)
 
 If we review the classification report for start after 6 months for 7 month with a short window of 29 and long window of 50, we observe 
-![SVM short 29 long 50 start 6 period 7](Resources/SVM_short_29_long_50_start_6_period_7.png)
-![Adaboost short 29 long 50 start 6 period 7](Resources/Adaboost_short_29_long_50_start_6_period_7.png)
+![SVM short 29 long 50 start 6 period 7](Resources/SVM_short_29_long_50_start_6_period_7_classification_report.png)
+![Adaboost short 29 long 50 start 6 period 7](Resources/Adaboost_short_29_long_50_start_6_period_7_classification_report.png)
