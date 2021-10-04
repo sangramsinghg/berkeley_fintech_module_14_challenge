@@ -1,6 +1,12 @@
 # Machine Learning Trading Bot
 Machine Learning Trading Bot
 
+## Summary
+* Smaller training period for models works better because it prevents overfitting
+* The most accurate model are not the best because they cannot predict negative returns and may have worked better in the test period but may not work in future when other events are encountered.
+* Adaboost appears to work better than SVM because it is able to predict the negative returns better than SVM.
+* 
+
 ## Baseline Analysis
 ### SVM short is 4 and long is 100.
 * The model has an accuracy of 0.55. 
@@ -62,3 +68,16 @@ an opposite direction to the actual returns. This model can be rejected for this
 ![AdaBoost short=4 long=50 train 4,2015 to 4,2017](Resources/Adaboost_short_4_long_50_train_4_2015_4_2017.png)
 ![AdaBoost short=4 long=50 train 4,2015 to 4,2017 Shifted](Resources/Adaboost_short_4_long_50_train_4_2015_4_2017_shifted.png)
 
+## Test runs 
+Various iterations of testing was done and the results are as follows:
+
+![Test Results 1](Resources/test_results_various_runs_1.png)
+![Test Results 2](Resources/test_results_various_runs_2.png)
+
+If we review the classification report for start after 18 months for 31 month with a short window of 37 and long window of 290, we observe 
+![SVM short 37 long 290 start 18 period 31](Resources/SVM_short_37_long_290_start_18_period_31.png)
+![Adaboost short 37 long 290 start 18 period 31](Resources/Adaboost_short_37_long_290_start_18_period_31.png)
+
+If we review the classification report for start after 6 months for 7 month with a short window of 29 and long window of 50, we observe 
+![SVM short 29 long 50 start 6 period 7](Resources/SVM_short_29_long_50_start_6_period_7.png)
+![Adaboost short 29 long 50 start 6 period 7](Resources/Adaboost_short_29_long_50_start_6_period_7.png)
